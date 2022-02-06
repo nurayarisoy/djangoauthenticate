@@ -1,0 +1,13 @@
+ <h1> login page</h1>
+ <div file-center:'center' color: 'red'> 
+  
+ 
+<form action="{% url 'login' %}" method="POST">
+
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <input type="submit", value="Login">
+
+</form>
